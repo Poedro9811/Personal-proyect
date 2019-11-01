@@ -37,30 +37,30 @@
       <h2>Formulario</h2>
       <form onsubmit="return validar()">
         <div>
-          <input onclick="eliminarErrorNombre()" id="name" type="text" placeholder="Nombre" />
-          <span id="errorName"></span>
+          <input onfocus="eliminarError(this, 'errorName')" id="name" type="text" placeholder="Nombre" />
+          <span for="name" id="errorName"></span>
         </div>
         <div>
-          <input onclick="eliminarErrorApellido()" name="" id="lastname" type="text" placeholder="Apellido" />
+          <input onfocus="eliminarError(this, 'errorLastname')" name="" id="lastname" type="text" placeholder="Apellido" />
           <span id="errorLastname"></span>
         </div>
 
         <div>
-          <input onclick="eliminarErrorEmail()" name="" id="email" type="email" placeholder="Email" />
+          <input onfocus="eliminarError(this, 'errorEmail')" name="" id="email" type="email" placeholder="Email" />
           <span id="errorEmail"></span>
 
         </div>
         <div>
-          <input onclick="eliminarErrorCI()" name="" type="number" id="ci" placeholder="C:I" />
+          <input onfocus="eliminarError(this, 'errorCI')" name="" type="number" id="ci" placeholder="C:I" />
           <span id="errorCI"></span>
 
         </div>
         <div>
-          <select onclick="eliminarErrorDep()" name="dep" id="dep" onchange="selectLoc()"> </select>
+          <select onfocus="eliminarError(this, 'errorDep')" name="dep" id="dep" onchange="selectLoc()"> </select>
           <span id="errorDep"></span>
         </div>
         <div>
-          <select onclick="eliminarErrorLoc()" name="loc" id="loc"> </select>
+          <select onfocus="eliminarError(this, 'errorLoc')" name="loc" id="loc"> </select>
           <span id="errorLoc"></span>
         </div>
         <div>

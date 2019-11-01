@@ -123,39 +123,10 @@ function validar() {
 /********************** Eliminar errores ***************************************************************/
 /*************************************************************************************************************************/
 
-function eliminarErrorNombre() {
-  document.getElementById("name").style.borderColor = "";
-  document.getElementById("errorName").innerHTML = "";
+function eliminarError(e, errorElementId) {
+  document.getElementById(e.id).style.borderColor = "";
+  document.getElementById(errorElementId).innerHTML = "";
 
-}
-
-function eliminarErrorApellido() {
-  document.getElementById("lastname").style.borderColor = "";
-  document.getElementById("errorLastname").innerHTML = "";
-}
-
-function eliminarErrorEmail() {
-
-  document.getElementById("email").style.borderColor = "";
-  document.getElementById("errorEmail").innerHTML = "";
-}
-
-function eliminarErrorCI() {
-
-  document.getElementById("ci").style.borderColor = "";
-  document.getElementById("errorCI").innerHTML = "";
-}
-
-function eliminarErrorDep() {
-
-  document.getElementById("dep").style.borderColor = "";
-  document.getElementById("errorDep").innerHTML = "";
-}
-
-function eliminarErrorLoc() {
-
-  document.getElementById("loc").style.borderColor = "";
-  document.getElementById("errorLoc").innerHTML = "";
 }
 
 function eliminarErrorCheck() {
