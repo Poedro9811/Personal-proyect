@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="MaterialPrueba_archivos/css/styles1.css" />
+  <link rel="stylesheet" href="MaterialPrueba_archivos/css/styles2.css">
+  <link rel="stylesheet" href="slick/slick.css">
+  <link rel="stylesheet" href="slick/slick-theme.css">
+  <link rel="stylesheet" href="MaterialPrueba_archivos/css/styles3.css">
+  <title>Test Backend</title>
+</head>
+
+<body>
+  <div>
+    <div>
+      <img src="MaterialPrueba_archivos/css/banda.png" width="100%" height="50px">
+    </div>
+    <section class="lazy slider" data-sizes="50vw">
+      <div>
+        <img src="MaterialPrueba_archivos/css/header.jpg" width="100%" height="300px">
+      </div>
+      <div>
+        <img src="MaterialPrueba_archivos/css/header.jpg" width="100%" height="300px">
+      </div>
+      <div>
+        <img src="MaterialPrueba_archivos/css/header.jpg" width="100%" height="300px">
+      </div>
+    </section>
+
+
+    <h1>Últimos artículos:</h1>
+    <div id="container"></div>
+    <div>
+      <h2>Formulario</h2>
+      <form onsubmit="return validar()">
+        <div>
+          <input onclick="eliminarErrorNombre()" id="name" type="text" placeholder="Nombre" />
+          <span id="errorName"></span>
+        </div>
+        <div>
+          <input onclick="eliminarErrorApellido()" name="" id="lastname" type="text" placeholder="Apellido" />
+          <span id="errorLastname"></span>
+        </div>
+
+        <div>
+          <input onclick="eliminarErrorEmail()" name="" id="email" type="email" placeholder="Email" />
+          <span id="errorEmail"></span>
+
+        </div>
+        <div>
+          <input onclick="eliminarErrorCI()" name="" type="number" id="ci" placeholder="C:I" />
+          <span id="errorCI"></span>
+
+        </div>
+        <div>
+          <select onclick="eliminarErrorDep()" name="dep" id="dep" onchange="selectLoc()"> </select>
+          <span id="errorDep"></span>
+        </div>
+        <div>
+          <select onclick="eliminarErrorLoc()" name="loc" id="loc"> </select>
+          <span id="errorLoc"></span>
+        </div>
+        <div>
+          <input onclick="eliminarErrorCheck()" type="checkbox" name="checking" id="terminos" />
+          <p id="errorCheck">Acepto bases y condiciones</p>
+
+        </div>
+        <div>
+          <input type="submit" class="btn_submit" value="Enviar" />
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="MaterialPrueba_archivos/js/datos.js"></script>
+  <script src="MaterialPrueba_archivos/logica.js"></script>
+  <script src="MaterialPrueba_archivos/js/printSection.js"></script>
+  <script src="slick/jquery-3.4.1.min.js"></script>
+  <script src="slick/jquery-migrate-1.2.1.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="MaterialPrueba_archivos/js/slider.js"></script>
+
+</body>
+
+</html>
